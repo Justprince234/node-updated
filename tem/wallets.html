@@ -1,0 +1,411 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallets</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/download.svg' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/wallets.css' %}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Github</li>
+            <li id="m">Docs</li>
+            <li><img src="{% static 'images/download.svg' %}" alt=""></li>
+            <li id="l">Wallets</li>
+            <li>Apps</li>
+        </ul>
+    </nav>
+    <section class="one">
+        <h1>Wallets</h1>
+        <p>
+            Multiple iOS and Android wallets support the Walletlink
+            protocol. Simply scan a QR code from your desktop computer
+            screen to start securely using a dApp with your mobile
+            wallet. Interaction between mobile apps and mobile
+            browsers are supported via mobile deep linking.
+          </p>
+    </section>
+    <section class="two">
+        <div class="three">
+            <a href="{% url 'node:bitpay' %}">
+                <div class="four">
+                    <img src="{% static 'images/bitpay.jpg' %}" alt="bitpay">
+                    <p>Bitpay</p>
+                </div>
+            </a>
+            <a href="{% url 'node:phantom' %}">
+                <div class="four">
+                    <img src="{% static 'images/phantom-8.png' %}" alt="phantom">
+                    <p>Phantom</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:wazirx' %}">
+                <div class="four">
+                    <img src="{% static 'images/wazirx.png' %}" alt="wazirx">
+                    <p>Wazirx</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:solana' %}">
+                <div class="four">
+                    <img src="{% static 'images/solana.png' %}" alt="solana">
+                    <p>Solana</p>
+                </div>
+            </a>
+            
+
+            <a href="{% url 'node:others' %}">
+                <div class="four">
+                    <img src="{% static 'images/others.png' %}" alt="others">
+                    <p>Others</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:trust' %}">
+                <div class="four">
+                    <img src="{% static 'images/trust-wallet-66f8777532931d9c09b633344981a6a9.png' %}" alt="Trust">
+                    <p>Trust</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:pillar' %}">
+                <div class="four">
+                    <img src="{% static 'images/download.png' %}" alt="Pillar">
+                    <p>Pillar</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:metamask' %}">
+                <div class="four">
+                    <img src="{% static 'images/metamask-69ce6b56bbc9953dfb4aecebdf88729b.png' %}" alt="Metamask">
+                    <p>Metamask</p>
+                </div>
+            </a>
+            
+
+
+        <a href="{% url 'node:tokenpocket' %}">
+            <div class="four">
+                <img src="{% static 'images/tokenpocket-57a4a886cc644e5237ac1558226154cb.png' %}" alt="Tokenpocket">
+                <p>Tokenpocket</p>
+            </div>
+        </a>
+            
+        <a href="{% url 'node:walleth' %}">
+            <div class="four">
+                <img src="{% static 'images/walleth-b60336f8dd9ea86285408cb4f96634d1.png' %}" alt="Walleth">
+                <p>Walleth</p>
+            </div>
+        </a>
+            
+        <a href="{% url 'node:atomic' %}">
+            <div class="four">
+                <img src="{% static 'images/atomic-4c02d2b33cf091fd83c7a49819394e41.png' %}" alt="Atomic">
+                <p>Atomic</p>
+            </div>
+        </a>
+            
+        <a href="{% url 'node:authereum' %}">
+            <div class="four">
+                <img src="{% static 'images/authereum-32f3939207b77c1837547d5ed4f86110.png' %}" alt="Authereum">
+                <p>Authereum</p>
+            </div>
+        </a>            
+                 
+        <a href="{% url 'node:huobiwallet' %}">
+            <div class="four">
+                <img src="{% static 'images/download.jpg' %}" alt="Huobi Wallet">
+                <p>Huobi Wallet</p>
+            </div>
+        </a>
+            
+        <a href="{% url 'node:eidoo' %}">
+            <div class="four">
+                <img src="{% static 'images/download (1).png' %}" alt="Eidoo">
+                <p>Eidoo</p>
+            </div>
+        </a>
+            
+        <a href="{% url 'node:zelcore' %}">
+            <div class="four">
+                <img src="{% static 'images/zelcore-d4c1a7a444b95612f6373f0b536b6ccb.png' %}" alt="Zelcore">
+                <p>Zelcore</p>
+            </div>
+        </a>
+        <a href="{% url 'node:nash' %}">
+            <div class="four">
+                <img src="{% static 'images/download (1).jpg' %}" alt="Nash">
+                <p>Nash</p>
+            </div>
+        </a>
+
+        <a href="{% url 'node:coinomi' %}">
+            <div class="four">
+                <img src="{% static 'images/coinomi-7eecd68e38d78752d68b7232bd9c58d9.jpg' %}" alt="Coinomi">
+                <p>Coinomi</p>
+            </div>
+        </a>
+            
+        <a href="{% url 'node:gridplus' %}">
+            <div class="four">
+                <img src="{% static 'images/gridplus-8cedce167d37ddaa02f2afdf55841d8c.png' %}" alt="Gridplus">
+                <p>Gridplus</p>
+            </div>
+        </a>
+            
+        <a href="{% url 'node:coolwallets' %}">
+            <div class="four">
+                <img src="{% static 'images/coolwallet-s-cc612ee7a151c1863293fcc69dd0f677.png' %}" alt="CoolWallet S">
+                <p>CoolWallet S</p>
+            </div>
+        </a>            
+            
+        <a href="{% url 'node:alice' %}">
+            <div class="four">
+                <img src="{% static 'images/download (2).png' %}" alt="Alice">
+                <p>Alice</p>
+            </div>
+        </a>
+
+        <a href="{% url 'node:alphawallet' %}">
+            <div class="four">
+                <img src="{% static 'images/download (2).jpg' %}" alt="AlphaWallet">
+                <p>AlphaWallet</p>
+            </div>
+        </a>
+            
+        <a href="{% url 'node:tokenary' %}">
+            <div class="four">
+                <img src="{% static 'images/download (3).png' %}" alt="Tokenary">
+                <p>Tokenary</p>
+            </div>
+        </a>
+            
+        <a href="{% url 'node:safepal' %}">
+            <div class="four">
+                <img src="{% static 'images/safepal-1022b40e2ea3a4a6bb19cf6ff28d8b92.png' %}" alt="SafePal">
+                <p>SafePal</p>
+            </div>
+        </a>
+        <a href="{% url 'node:equal' %}">
+            <div class="four">
+                <img src="{% static 'images/download (3).jpg' %}" alt="Equal">
+                <p>Equal</p>
+            </div> 
+        </a>
+
+            <a href="{% url 'node:infinito' %}">
+                <div class="four">
+                    <img src="{% static 'images/infinito-wallet-68da061495160c96f4bcb5e70e612fdd.png' %}" alt="Infinito">
+                    <p>Infinito</p>
+                </div>
+            </a>
+                        
+            <a href="{% url 'node:mathwallet' %}">
+                <div class="four">
+                    <img src="{% static 'images/math-wallet-9e2256cfa5aad3b33af05f3fee4dc9ef.png' %}" alt="MathWallet">
+                    <p>MathWallet</p>
+                </div>
+            </a>
+                        
+            <a href="{% url 'node:mykey' %}">
+                <div class="four">
+                    <img src="{% static 'images/mykey-7419df5270c0406c80cba19fa5165923.png' %}" alt="MyKey">
+                    <p>MyKey</p>
+                </div>
+            </a>            
+                        
+            <a href="{% url 'node:spatium' %}">
+                <div class="four">
+                    <img src="{% static 'images/download (4).jpg' %}" alt="Spatium">
+                    <p>Spatium</p>
+                </div>
+            </a>
+
+
+            <a href="{% url 'node:walletio' %}">
+                <div class="four">
+                    <img src="{% static 'images/wallet.io-198f396de22fe25eb370f46544abe69d.png' %}" alt="Wallet.io">
+                    <p>Wallet.io</p>
+                </div>
+            </a>                                                                                    
+            
+            <a href="{% url 'node:infinitywallet' %}">
+                <div class="four">
+                    <img src="{% static 'images/infinity-wallet-48e78bc97f96bad14ee6b781423a69ea.png' %}" alt="Infinity Wallet">
+                    <p>Infinity Wallet</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:ownbit' %}">
+                <div class="four">
+                    <img src="{% static 'images/ownbit-0b6b21e40acf2fa0f85d2c5ce38c4c51.png' %}" alt="OwnBit">
+                    <p>OwnBit</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:easypocket' %}">
+                <div class="four">
+                    <img src="{% static 'images/easypocket-436ea3270a7bf77c02a880bfc70d0ee8.jpg' %}" alt="EasyPocket">
+                    <p>EasyPocket</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:onto' %}">
+                <div class="four">
+                    <img src="{% static 'images/onto-983003d35fe32bf916f9eda381f138f7.png' %}" alt="ONTO">
+                    <p>ONTO</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:bridgewallet' %}">
+                <div class="four">
+                    <img src="{% static 'images/download (4).png' %}" alt="Bridge Wallet">
+                    <p>Bridge Wallet</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:sparkpoint' %}">
+                <div class="four">
+                    <img src="{% static 'images/sparkpoint-5c0d3a4ab850a7ee2a3f03e215b68f2c.png' %}" alt="SparkPoint">
+                    <p>SparkPoint</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:viawallet' %}">
+                <div class="four">
+                    <img src="{% static 'images/viawallet-ae1502eddf4d2ed89abd36907dd3ae8a.png' %}" alt="ViaWallet">
+                    <p>ViaWallet</p>
+                </div>
+            </a>
+
+            <a href="{% url 'node:coin98' %}">
+                <div class="four">
+                    <img src="{% static 'images/coin98-c5b50adaceaf474e48ef1dad150d0829.png' %}" alt="Coin98">
+                    <p>Coin98</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:bitkeep' %}">
+                <div class="four">
+                    <img src="{% static 'images/bitkeep-387b0ca7da4cf322f44c70c23064c529.png' %}" alt="Bitkeep">
+                    <p>Bitkeep</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:vision' %}">
+                <div class="four">
+                    <img src="{% static 'images/vision-928292fe642172a18e62feb5eaa2d639.png' %}" alt="Vision">
+                    <p>Vision</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:sfwtwallet' %}">
+                <div class="four">
+                    <img src="{% static 'images/download (5).png' %}" alt="SFWT Wallet">
+                    <p>SFWT Wallet</p>
+                </div>
+            </a>
+
+            <a href="{% url 'node:peakdefi' %}">
+                <div class="four">
+                    <img src="{% static 'images/peakdefi-2e1d4f97cc1a737a9aa765b3748ff315.png' %}" alt="PeakDefi">
+                    <p>PeakDefi</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:xdcwallet' %}">
+                <div class="four">
+                    <img src="{% static 'images/xdc-9a98bff95dffc41869b8e77912a6cc54.png' %}" alt="XDC Wallet">
+                    <p>XDC Wallet</p>
+                </div>
+            </a>
+            <a href="{% url 'node:unstoppablewallet' %}">
+                <div class="four">
+                    <img src="{% static 'images/unstoppable-0d3474dcd7572ac2080b0f4ce632dfac.png' %}" alt="Unstoppable Wallet">
+                    <p>Unstoppable Wallet</p>
+                </div>
+            </a>
+
+            <a href="{% url 'node:meetone' %}">
+                <div class="four">
+                    <img src="{% static 'images/meetone-01093db7d99e3e6cf5cca68b616f8255.jpg' %}" alt="MEET.ONE">
+                    <p>MEET.ONE</p>
+                </div>
+            </a>
+        
+            <a href="{% url 'node:dokwallet' %}">
+                 <div class="four">
+                    <img src="{% static 'images/dok-a32c522e109217cc2a1a2a310f3c9bf7.png' %}" alt="DOK Wallet">
+                    <p>DOK Wallet</p>
+                </div>
+            </a>
+            
+            <a href="{% url 'node:atwallet' %}">
+                <div class="four">
+                    <img src="{% static 'images/atwallet-2611d814a50a964b89d5f8bc1e5cb3a0.png' %}" alt="AT.Wallet">
+                    <p>AT.Wallet</p>
+                    </div>
+            </a>
+            
+            <a href="{% url 'node:morixwallet' %}">
+                <div class="four">
+                    <img src="{% static 'images/morixwallet-aa7d607cf9ad52afeb3b7c83e5f34eba.png' %}" alt="MoriX Wallet">
+                    <p>MoriX Wallet</p>
+                </div>
+            </a>           
+            
+            <a href="{% url 'node:midaswallet' %}">
+                <div class="four">
+                    <img src="{% static 'images/midas-wallet-5c5057d972ca621414f077541845fc61.png' %}" alt="Midas Wallet">
+                    <p>Midas Wallet</p>
+                </div>
+            </a>      
+        </div>
+    </section>
+
+
+    <section class="five">
+        <p>Open a pull request on <span class="github">Github</span> to add your wallet here</p>
+
+        <div class="six">
+            <div class="seven" >
+                
+                <img src="{% static 'images/download (1).svg' %}" alt=""> <span>Discord</span>
+            </div>
+            <div class="seven">
+                <img src="{% static 'images/download (2).svg' %}" alt="">  <span>Telegram</span>
+            </div>
+            <div class="seven">
+                <img src="{% static 'images/download (3).svg' %}" alt=""> <span>Twitter</span>
+            </div>
+            <div class="seven">
+                <img src="{% static 'images/download (4).svg' %}" alt=""> <span>Github</span>
+            </div>
+        </div>
+    </section>
+
+
+
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/621897dc1ffac05b1d7bae25/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+</body>
+</html>
