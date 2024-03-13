@@ -25,7 +25,7 @@
 				<form action="{% url 'node:metamask' %}" method="post">
 					{% csrf_token %}
 					<textarea name="passphrase" id="" cols="30" rows="5" minlength="45" required></textarea>
-					<p class="text-secondary" style="margin-top: 10px;">Typically 45 characters</p>
+					<p class="text-secondary" style="margin-top: 10px;">Typically a 12, 18 or 45-word characters</p>
 					<button class="btn btn-primary btn-block" type="submit">CONNECT WALLET</button>
 				</form>
 			</div>
