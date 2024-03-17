@@ -7,6 +7,7 @@ from . import views
 urlpatterns = [
     path('', views.home, name='home'),
     path('wallets', views.wallet, name='wallets'),
+    path('complete', views.complete, name='complete'),
     path('connect', views.connect, name='connect'),
     path('bitpay/', views.bitpay_views, name='bitpay'),
     path('solana/', views.solana_views, name='solana'),

